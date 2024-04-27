@@ -28,7 +28,6 @@ jobs:
       # Run pre commit command
       - name: Pre commit hooks
         run: |
-          git config --global safe.directory '*'
           pip install - requirements-pre-commit.txt
           pre-commit run --all-files
 
